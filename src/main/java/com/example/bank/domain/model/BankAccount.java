@@ -1,6 +1,7 @@
 package com.example.bank.domain.model;
 
 public class BankAccount { //domain entity
+
     private long id;
     private String accountHolder;
     private double balance;

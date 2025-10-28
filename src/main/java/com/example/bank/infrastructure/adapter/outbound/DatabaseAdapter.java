@@ -6,17 +6,18 @@ import com.example.bank.infrastructure.entity.BankAccountEntity;
 import com.example.bank.infrastructure.mapper.BankAccountMapper;
 import org.springframework.stereotype.Component;
 
-import javax.xml.crypto.Data;
 import java.util.HashMap;
 import java.util.Optional;
 
 @Component //@Component is an annotation that allows Spring to detect our custom beans automatically.
 public class DatabaseAdapter implements BankAccountRepository {
-    private HashMap<String, BankAccountEntity> accounts;
+    private HashMap<Long, BankAccountEntity> accounts;
     private BankAccountMapper bankAccountMapper;
 
     public DatabaseAdapter(BankAccountMapper bankAccountMapper) {
         accounts = new HashMap<>();
+        accounts.put(1L, new BankAccountEntity(1L,"Michael Syfers", 500));
+        accounts.put(2L, new BankAccountEntity(2L,"Ava Smith", 300));
         this.bankAccountMapper = bankAccountMapper; //example of Dependency Injection
     }
 
