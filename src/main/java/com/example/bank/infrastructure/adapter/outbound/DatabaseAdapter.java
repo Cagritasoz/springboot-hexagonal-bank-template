@@ -11,8 +11,8 @@ import java.util.Optional;
 
 @Component //@Component is an annotation that allows Spring to detect our custom beans automatically.
 public class DatabaseAdapter implements BankAccountRepository {
-    private HashMap<Long, BankAccountEntity> accounts;
-    private BankAccountMapper bankAccountMapper;
+    private final HashMap<Long, BankAccountEntity> accounts;
+    private final BankAccountMapper bankAccountMapper;
 
     public DatabaseAdapter(BankAccountMapper bankAccountMapper) {
         accounts = new HashMap<>();
