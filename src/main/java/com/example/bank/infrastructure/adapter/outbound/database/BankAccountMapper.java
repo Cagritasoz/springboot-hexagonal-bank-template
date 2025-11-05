@@ -1,7 +1,6 @@
-package com.example.bank.infrastructure.mapper;
+package com.example.bank.infrastructure.adapter.outbound.database;
 
 import com.example.bank.domain.model.BankAccount;
-import com.example.bank.infrastructure.entity.BankAccountEntity;
 import org.springframework.stereotype.Component;
 
 @Component

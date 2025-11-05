@@ -1,4 +1,4 @@
-package com.example.bank.infrastructure.entity;
+package com.example.bank.infrastructure.adapter.outbound.database;
 
 public class BankAccountEntity {
     private long id;

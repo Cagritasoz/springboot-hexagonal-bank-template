@@ -1,9 +1,7 @@
-package com.example.bank.infrastructure.adapter.outbound;
+package com.example.bank.infrastructure.adapter.outbound.database;
 
 import com.example.bank.domain.model.BankAccount;
 import com.example.bank.domain.port.outbound.BankAccountRepository;
-import com.example.bank.infrastructure.entity.BankAccountEntity;
-import com.example.bank.infrastructure.mapper.BankAccountMapper;
 import org.springframework.stereotype.Component;
 
 import java.util.HashMap;

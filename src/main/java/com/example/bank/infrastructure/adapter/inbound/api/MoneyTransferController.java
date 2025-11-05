@@ -1,4 +1,4 @@
-package com.example.bank.infrastructure.adapter.inbound;
+package com.example.bank.infrastructure.adapter.inbound.api;
 
 import com.example.bank.domain.port.inbound.MoneyTransferUseCase;
 import org.springframework.web.bind.annotation.PostMapping;
